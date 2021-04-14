@@ -8,7 +8,6 @@ export default async (req, res) => {
       .db("link_db")
       .collection("link_collection")
       .insertOne({ link: req.body.link });
-    console.log("Vercel :"+process.env.VERCEL_URL+", Env pass :"+process.env.MONGODB_URI);
     res.statusCode = 201;
     return res.json({short_link: `${process.env.VERCEL_URL}/r/${entry.insertedId}`});
   }
