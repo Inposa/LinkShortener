@@ -8,6 +8,6 @@ export async function connectToDatabase() {
     }
     const client = new MongoClient(process.env.MONGODB_URI, {useNewUrlParser: true, useUnifiedTopology: true});
 
-    cacheDb = client;
+    cacheDb = client; 
     return await client.connect();
 }
