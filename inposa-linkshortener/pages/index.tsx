@@ -47,7 +47,7 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>Yet Another Link Shortner</title>
+        <title>Hippo's Link Shortner</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header>
@@ -84,7 +84,7 @@ export default function Home() {
         </div>
       </Content>
       <Footer className={styles.footer}>
-        Yet Another Link Shortener (YALS) &copy; 2021
+        Hippo's Link Shortener (HLS) &copy; 2021
       </Footer>
     </Layout>
   )
